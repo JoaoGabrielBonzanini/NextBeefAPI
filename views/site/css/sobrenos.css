@@ -1,0 +1,27 @@
+.texto h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: #D18635;
+    text-align: center;
+}
+
+.texto p{
+    margin-top: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.texto{
+    background-image: url('/img/fundo.jpg');
+    background-size:cover;
+    background-position: left top;
+}
+ 

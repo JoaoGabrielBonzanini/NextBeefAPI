@@ -1,0 +1,51 @@
+.localizacao{
+       text-align:center;
+}
+
+.cabeca{
+        display: flex;
+        justify-content: space-around;
+        margin-right: 130px;
+}
+
+h2{
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 25px;
+}
+
+.rede{
+        display: flex;
+        border: 2px solid #FCB040;
+        width: 35vw;
+        height: 80px;
+        border-radius: 6px;
+        align-items: center;
+        justify-content: center;
+        /* margin-top: 50px; */
+        margin-bottom: 50px;
+        /* text-shadow: 2px 2px 6px rgb(0, 0, 0); */
+
+}
+
+.rede img{
+        width: 50px;
+        margin-right: 30px;
+}
+
+.corpo{
+        display: flex;
+}
+
+.redes{
+        margin-right: 250px;
+        margin-left: 50px;
+}
+
+.titulo{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: space-around;
+        margin-right: 80px;
+}

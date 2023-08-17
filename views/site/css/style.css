@@ -1,0 +1,186 @@
+  @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+
+
+
+*{
+        margin: 0;
+        padding: 0;
+        color: white;
+        font-family: 'Kanit';
+}
+
+html{
+        height: 100%;
+}
+
+body{
+        width: 100vw;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+#wrapper{
+        min-height: 100%;
+        position: relative;
+        background-color: black;
+}
+
+div.body-content{
+        padding-bottom: 50px;
+}
+
+.container{
+        position: relative;
+        min-height: 100%;
+        width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+header{
+        width: 90%;
+        height: 160px;
+        display: flex;
+}
+
+.logo{
+        width: 200px;
+        height: 150px;
+        text-align: center;
+}
+
+.logo img{
+        width: 200px;
+        height: auto;
+}
+
+.logo h2{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white;
+        font-weight: 700;
+        /*font-size: 30px;*/
+}
+
+.topo{
+        width: 85%;
+}
+
+.botao{
+        display: flex;
+        margin-left: 90%;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        height: 15px;
+        width: 80px;
+        margin-top: 35px;
+        background-color: #FCB040;
+        padding: 15px;
+        border-radius: 10px;
+}
+
+button{
+        padding: 10px;
+        width: auto;
+        height: auto;
+}
+
+.botao img{
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+}
+
+.botao a{
+        font-size: 18px;
+        text-decoration: none;
+        margin-left: 5px;
+        text-shadow: 2px 2px 6px black;
+}
+
+nav{
+        background-color: #FCB040;
+}
+
+.principal{
+        background-color: #FCB040;
+        height: 40px;
+        margin-top: 40px;
+        padding-left: 100px;
+        padding-right: 100px;
+        align-items: center;
+        border-radius: 5px;
+}
+
+.principal ul li{
+        text-shadow: 2px 2px 6px rgb(0, 0, 0);
+}
+
+
+.principal ul{
+        list-style: none;
+        justify-content: space-around;
+        display: flex;
+        align-items: center;
+        height: 40px;
+        font-size: 22px;
+}
+
+.principal ul a{
+        text-decoration: none;
+}
+
+.carrossel{
+        width: 70vw;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+.carrossel img{
+        width: 70vw;
+        height: 450px;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+#titulo{
+        font-weight: 700;
+        font-size: 22px;
+}
+
+.texto h2{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 22px;
+        font-weight: 400;
+        color: white;
+        text-align: center;
+}
+
+.linha{
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+}
+
+.produto img{
+        width: 125px;
+        height: auto;
+}
+
+footer{
+        width: 100vw;
+        background-color: #FCB040;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        line-height: 30px;
+        position: absolute;
+        left: auto;
+        bottom: 0;
+}

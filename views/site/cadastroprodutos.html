@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Produtos - Next Beef</title>
+        <link rel="stylesheet" href="./css/bootstrap-5.3.0-dist/css/bootstrap.rtl.min.css">
+</head>
+
+<body>
+        <div class="container">
+                <div class="row">
+                        <div class="text-center shadow p-3 mb-5 bg-body-tertiary rounded mt-3">
+                                <h2>Controle de Produtos</h2>
+                        </div>
+                        <div class="cadastrar d-flex justify-content-end">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#createModal">Cadastro Produto</button>
+                        </div>
+                        <table id="cadastro" class="table mt-3">
+                                <thead>
+                                        <tr>
+                                                <th id="id" scope="col">Id</th>
+                                                <th id="descricao_produto" scope="col">Descrição do Produto</th>
+                                                <th id="corte" scope="col">Corte</th>
+                                                <th id="data_vencimento" scope="col">Data de Vencimento</th>
+                                                <th id="marca" scope="col">Marca</th>
+                                                <th id="tipo" scope="col">Tipo</th>
+                                                <th id="valor_produto" scope="col">Valor do Produto</th>
+                                                <th id="imagem" scope="col">Imagem</th>
+                                                <th scope="col">Edição</th>
+                                                <th scope="col">Exclusão</th>
+                                        </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                        </table>
+                </div>
+                <section>
+                        <div class="container">
+                                <!-- Modal -->
+                                <div class="modal fade" id="createModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                        <div class="modal-header">
+                                                                <h1 class="modal-title fs-5" id="exampleModalLabel">Novo Produto</h1>
+                                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                                <form id="form" class="row" action="">
+                                                                        <label class="mt-2" for="m-descricao">Descrição do Produto</label><input type="text" id="m-descricao" required>
+                                                                        <label class="mt-2" for="m-corte">Corte</label><input type="text" id="m-corte" required>
+                                                                        <label class="mt-2" for="m-vencimento">Data de Vencimento</label><input type="date" id="m-vencimento" required>
+                                                                        <label class="mt-2" for="m-marca">Marca</label><input type="text" id="m-marca" required>
+                                                                        <label class="mt-2" for="m-tipo">Tipo</label><input type="text" id="m-tipo" required>
+                                                                        <label class="mt-2" for="m-valor">Valor do Produto</label><input type="numer" id="m-valor" required>
+                                                                        <label class="mt-2" for="m-imagem">Imagem</label><input type="text" id="m-imagem" required>
+
+                                                                </form>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                                <button id="btn-save" type="button"
+                                                                        class="btn btn-success">Salvar</button>
+                                                                <button type="button" class="btn btn-secondary"
+                                                                        data-bs-dismiss="modal">Cancelar</button>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="modal fade" id="updateModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                        <div class="modal-content">
+                                                <div class="modal-header">
+                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Novo
+                                                        Produto</h1>
+                                                        <button type="button" class="btn-close"
+                                                        data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                        <div class="modal-body">
+                                                                <form id="form" class="row" action="">
+                                                                        <label class="mt-2" for="u-descricao">Descrição do Produto</label><input type="text" id="u-descricao" required>
+                                                                        <label class="mt-2" for="u-corte">Corte</label><input type="text" id="u-corte" required>
+                                                                        <label class="mt-2" for="u-vencimento">Data de Vencimento</label><input type="date" id="u-vencimento" required>
+                                                                        <label class="mt-2" for="u-marca">Marca</label><input type="text" id="u-marca" required>
+                                                                        <label class="mt-2" for="u-tipo">Tipo</label><input type="text" id="u-tipo" required>
+                                                                        <label class="mt-2" for="u-valor">Valor do Produto</label><input type="numer" id="u-valor" required>
+                                                                        <label class="mt-2" for="u-imagem">Imagem</label><input type="text" id="u-imagem" required>
+
+                                                                </form>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                        <button id="btn-update" type="submit" class="btn btn-success">Atualizar</button>
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="modal fade" id="deleteModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                        <div class="modal-content">
+                                                <div class="modal-header">
+                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Excluir Produto</h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                        <div class="modal-body">
+                                                                <p>Tem certeza que deseja excluir este produto?</p>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                        <button id="btn-delete" type="submit" class="btn btn-danger">Sim</button>
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </section>
+        </div>
+</body>
+<script src="../site/js/popper.min.js"></script>
+<script src="./js/jquery-3.7.0.min.js"></script>
+<script src="../site/css/bootstrap-5.3.0-dist/js/bootstrap.min.js"></script>
+<script src="../site/js/cadastroprodutos.js"></script>
+
+</html>
